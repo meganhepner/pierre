@@ -28,6 +28,11 @@ namespace Pierre.Models
     {
       _vendors.Clear();
     }
+
+    public static void ClearCurrentId()
+    {
+      _currentId = 1;
+    }
     
   }
 }

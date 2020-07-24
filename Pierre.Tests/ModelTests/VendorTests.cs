@@ -12,6 +12,7 @@ namespace Pierre.Tests
     public void Dispose()
     {
       Vendor.ClearAll();
+      Vendor.ClearCurrentId();
     }
 
     [TestMethod]
