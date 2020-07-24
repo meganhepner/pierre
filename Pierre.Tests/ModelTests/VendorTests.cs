@@ -6,13 +6,13 @@ using System;
 namespace Pierre.Tests
 {
   [TestClass]
-  public class VendorTest : IDisposable
+  public class VendorTest 
   {
 
-    public void Dispose()
-    {
-      Category.ClearAll();
-    }
+    // public void Dispose()
+    // {
+    //   Vendor.ClearAll();
+    // }
 
    
   }

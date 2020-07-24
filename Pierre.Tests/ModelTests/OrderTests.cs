@@ -1,19 +1,20 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Order.Models;
+using Pierre.Models;
 using System;
 
 namespace Pierre.Tests
 {
   [TestClass]
-  public class OrderTest : IDisposable
+  public class OrderTest 
   {
 
-    public void Dispose()
+    [TestMethod]
+    public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Item.ClearAll();
+      Order newOrder = new Order("test");
+      Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
-
   
   }
 }
