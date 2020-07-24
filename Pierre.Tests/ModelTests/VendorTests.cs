@@ -9,10 +9,12 @@ namespace Pierre.Tests
   public class VendorTest 
   {
 
-    // public void Dispose()
-    // {
-    //   Vendor.ClearAll();
-    // }
+    [TestMethod]
+    public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
+    {
+      Vendor newVendor = new Vendor("testName", "testDescription");
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+    }
 
    
   }
