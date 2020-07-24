@@ -34,6 +34,17 @@ namespace Pierre.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      //Arrange
+      Order newOrder1 = new Order("testTitle", "testDescription", 100, 72720);
+      Order newOrder2 = new Order("testTitle2", "testDescription2", 200, 22720);
+      Order newOrder3 = new Order("testTitle3", "testDescription3", 300, 32720);
+      List<Order> newList = new List<Order> { newOrder1, newOrder2, newOrder3 };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
+
   
   }
 }
