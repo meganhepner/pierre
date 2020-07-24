@@ -33,6 +33,11 @@ namespace Pierre.Models
     {
       _currentId = 1;
     }
+
+    public static Vendor Find(int searchId)
+    {
+
+    }
     
   }
 }

@@ -34,6 +34,8 @@ __
 | Vendor class holds name, description, and list of orders. | none | list |
 | Vendor class can return a list of orders. | none | none |
 | Vendor class can assign unique Id for each vendor. | none | none |
+| Specific vendor can be found using unique id. | none | none |
+
 
 
 ## Known Bugs
