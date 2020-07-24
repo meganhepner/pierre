@@ -7,12 +7,16 @@ namespace Pierre.Models
     public string Name { get; set; }
     public string Description { get; set; }
     private static List<Vendor> _vendors = new List<Vendor> {};
+    public int Id { get; }
+    private static int _currentId = 1;
 
     public Vendor(string name, string description)
     {
       Name = name;
       Description = description;
       _vendors.Add(this);
+      Id = _currentId;
+      _currentId ++;
     }
 
     public static List<Vendor> GetAll()

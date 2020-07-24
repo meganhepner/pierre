@@ -33,6 +33,22 @@ namespace Pierre.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
+    [TestMethod]
+    public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      string name1 = "ISK";
+      string description1 = "restaurant";
+      string name2 = "FM";
+      string description2 = "grocery";
+      string name3 = "downtown";
+      string description3 = "market";
+      Vendor newVendor1 = new Vendor(name1, description1);
+      Vendor newVendor2 = new Vendor(name2, description2);
+      Vendor newVendor3 = new Vendor(name3, description3);
+      int result = newVendor2.Id;
+      Assert.AreEqual(2, result);
+    }
+
    
   }
 }
