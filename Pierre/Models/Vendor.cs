@@ -9,6 +9,7 @@ namespace Pierre.Models
     private static List<Vendor> _vendors = new List<Vendor> {};
     public int Id { get; }
     private static int _currentId = 1;
+    public List<Order> Orders { get; set; }
 
     public Vendor(string name, string description)
     {
@@ -17,6 +18,7 @@ namespace Pierre.Models
       _vendors.Add(this);
       Id = _currentId;
       _currentId ++;
+      Orders = new List<Order> {};
     }
 
     public static List<Vendor> GetAll()
@@ -42,6 +44,11 @@ namespace Pierre.Models
     public static void DeleteVendor(Vendor vendorName)
     {
       _vendors.Remove(vendorName);
+    }
+
+    public void AddOrder(Order order)
+    {
+      
     }
     
   }
