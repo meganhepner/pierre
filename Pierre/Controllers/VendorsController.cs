@@ -47,12 +47,11 @@ namespace Pierre.Controllers
       thisVendor.AddOrder(newOrder);
       List<Order> vendorOrders = thisVendor.Orders;
       model.Add("orders", vendorOrders);
-      model.Add("vendors", thisVendor);
+      model.Add("vendor", thisVendor);
       return View("Show", model);
     }
 
-// 
-// 
+
 
   }
 }
