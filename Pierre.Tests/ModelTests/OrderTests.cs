@@ -12,9 +12,16 @@ namespace Pierre.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("test");
+      Order newOrder = new Order("testTitle", "testDescription", 100, 72720 );
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+
+    public void OrderConstructor_CreatesInstanceOfOrderWithAllRequirements_Order()
+    {
+      Order newOrder = new Order("testTitle", "testDescription", 100, 72720 );
+      Assert.AreEqual(typeof(Order), newOrder.GetType());
+    }
+
   
   }
 }
