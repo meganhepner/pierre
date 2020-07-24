@@ -38,6 +38,11 @@ namespace Pierre.Models
     {
       return _vendors[searchId -1];
     }
+
+    public static void DeleteVendor(Vendor vendorName)
+    {
+ 
+    }
     
   }
 }
