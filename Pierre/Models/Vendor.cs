@@ -48,7 +48,7 @@ namespace Pierre.Models
 
     public void AddOrder(Order order)
     {
-      
+      Orders.Add(order);
     }
     
   }

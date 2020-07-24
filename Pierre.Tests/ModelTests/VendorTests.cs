@@ -88,11 +88,11 @@ namespace Pierre.Tests
       //Arrange
       Order newOrder1 = new Order("testTitle", "testDescription", 100, 72720);
       Order newOrder2 = new Order("testTitle2", "testDescription2", 200, 22720);
-      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+      List<Order> newList = new List<Order> { newOrder1 };
       string name1 = "ISK";
       string description1 = "restaurant";
       Vendor newVendor1 = new Vendor(name1, description1);
-      newVendor1.AddOrder(newOrder1, newOrder2);
+      newVendor1.AddOrder(newOrder1);
       List<Order> result = newVendor1.Orders;
       CollectionAssert.AreEqual(newList, result);
     }
