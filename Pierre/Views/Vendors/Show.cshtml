@@ -4,11 +4,9 @@
 
 @using Pierre.Models;
 
-<h3>Orders for @Model["vendor"].Name</h3>
-
 @foreach (Order order in @Model["orders"])
 {
-  <li><a href='/vendors/@Model["vendor"].Id/order/@order.Id'>@order.Title</a></li>
+  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
 }
 </ol>
 

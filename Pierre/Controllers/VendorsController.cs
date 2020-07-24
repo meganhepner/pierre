@@ -38,8 +38,21 @@ namespace Pierre.Controllers
       return View(model);
     }
 
+    [HttpPost("/vendors/{vendorId}/orders")]
+    public ActionResult Create(int vendorId, string title, string description, int price, int date)
+    {
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      Vendor thisVendor = Vendor.Find(vendorId);
+      Order newOrder = new Order(title, description, price, date);
+      thisVendor.AddOrder(newOrder);
+      List<Order> vendorOrders = thisVendor.Orders;
+      model.Add("orders", vendorOrders);
+      model.Add("vendors", thisVendor);
+      return View("Show", model);
+    }
 
-
+// 
+// 
 
   }
 }
