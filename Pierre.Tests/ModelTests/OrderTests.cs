@@ -11,6 +11,7 @@ namespace Pierre.Tests
     public void Dispose()
     {
       Order.ClearAll();
+      Order.ClearCurrentId();
     }
 
     [TestMethod]

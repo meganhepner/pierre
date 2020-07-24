@@ -9,7 +9,7 @@ namespace Pierre.Models
     public int Price { get; set; }
     public int Date { get; set; }
     public int Id { get; }
-    private static int _currentId = 0;
+    private static int _currentId = 1;
     private static List<Order> _orders = new List<Order> {};
 
     public Order(string title, string description, int price, int date)
@@ -41,6 +41,11 @@ namespace Pierre.Models
     public static void DeleteOrder(Order orderTitle)
     {
       _orders.Remove(orderTitle);
+    }
+
+    public static void ClearCurrentId()
+    {
+      _currentId = 1;
     }
 
   
