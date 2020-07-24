@@ -1,6 +1,6 @@
 # _Pierre_
 
-#### _Work with C# $ MVC, 7.24.20_
+#### _Work with C# & MVC, 7.24.20_
 
 #### By _Megan Hepner_
 
