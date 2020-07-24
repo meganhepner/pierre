@@ -38,6 +38,11 @@ namespace Pierre.Models
       return _orders[searchId -1];
     }
 
+    public static void DeleteOrder(Order orderTitle)
+    {
+      
+    }
+
   
   }
 }

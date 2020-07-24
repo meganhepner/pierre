@@ -28,6 +28,7 @@ __
 | Order object holds title, description, price & date. | none | none |
 | Order class can return a list of orders. | none | list |
 | Order class can assign unique Id for each order. | none | none |
+| Order class can delete order using order title. | none | none |
 | Specific order can be found using unique id. | none | none |
 | Vendor class can create a vendor object. | none | list |
 | Vendor class holds name, description, and list of orders. | none | list |
