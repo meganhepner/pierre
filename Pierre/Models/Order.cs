@@ -47,7 +47,5 @@ namespace Pierre.Models
     {
       _currentId = 1;
     }
-
-  
   }
 }

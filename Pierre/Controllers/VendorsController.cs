@@ -50,8 +50,5 @@ namespace Pierre.Controllers
       model.Add("vendor", thisVendor);
       return View("Show", model);
     }
-
-
-
   }
 }

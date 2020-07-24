@@ -50,6 +50,5 @@ namespace Pierre.Models
     {
       Orders.Add(order);
     }
-    
   }
 }
