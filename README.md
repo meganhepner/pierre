@@ -1,12 +1,12 @@
 # _Pierre_
 
-#### _, 2020 ver 1.0.0_
+#### _Work with C# $ MVC, 7.24.20_
 
-#### By _Peter Grimm , Micheal Hansen, & Megan Hepner_
+#### By _Megan Hepner_
 
 ## Description
 
-_This is an application for organizing a record collection. It uses C#, objects within objects, and Red Green Refactor testing._
+_This is an application showcasing lessons covered in Week 9 of Epicodus It uses C#, Red Green Refactor Testing, and MVC to create an app for a bakery. The owner of the bakery can record their vendors, as well as the orders that those vendors have made._
 
 ## Setup/Installation Requirements
 
@@ -24,12 +24,11 @@ __
 
 | Behavior    | Input | Output |
 | :---------- | ----- | -----: |
-| Program will create an album object | none | none |
-| Album object holds artist name and album name | none | none |
-| Program can retrieve a list of all albums | none | list |
-| Program can retrieve a list of all artists | none | list |
-| For each artist, program can retrieve a list of albums by that artist | none | none |
-| Program can delete an album | none | destroy |
+| Order class can create an order object. | none | none |
+| Order object holds title, description, price & date. | none | none |
+| Vendor class can create a vendor object. | none | list |
+| Vendor class holds name, description, and list of orders. | none | list |
+| Vendor class can return a list of orders. | none | none |
 
 
 ## Known Bugs
@@ -38,15 +37,15 @@ _No known bugs_
 
 ## Support and contact details
 
-_Contact : Megan Hepner, Peter Grimm, Micheal Hansen
+_Contact : Megan Hepner
 
 ## Technologies Used
 
-_The Technologies used in the making of this software was Chrome browser, Visual Studio editor, and Mac, C#_
+_C#, .Net, Razor, Bootstrap_
 
 ### License
 
-Copyright (c) 2020 **_Peter Grimm & Micheal Hansen & Megan Hepner_**
+Copyright (c) 2020 **_Megan Hepner_**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
