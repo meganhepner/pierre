@@ -85,7 +85,6 @@ namespace Pierre.Tests
     [TestMethod]
     public void AddOrder_AssociatesOrderWithVendor_OrderList()
     {
-      //Arrange
       Order newOrder1 = new Order("testTitle", "testDescription", 100, 72720);
       Order newOrder2 = new Order("testTitle2", "testDescription2", 200, 22720);
       List<Order> newList = new List<Order> { newOrder1 };
