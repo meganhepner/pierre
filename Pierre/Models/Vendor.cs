@@ -41,7 +41,7 @@ namespace Pierre.Models
 
     public static void DeleteVendor(Vendor vendorName)
     {
- 
+      _vendors.Remove(vendorName);
     }
     
   }
