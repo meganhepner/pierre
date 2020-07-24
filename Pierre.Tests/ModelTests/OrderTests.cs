@@ -55,6 +55,17 @@ namespace Pierre.Tests
       Assert.AreEqual(1, result);
     }
 
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      //Arrange
+      Order newOrder1 = new Order("testTitle", "testDescription", 100, 72720);
+      Order newOrder2 = new Order("testTitle2", "testDescription2", 200, 22720);
+      Order newOrder3 = new Order("testTitle3", "testDescription3", 300, 32720);
+      Order result = Order.Find(3);
+      Assert.AreEqual(newOrder3, result);
+    }
+
   
   }
 }
