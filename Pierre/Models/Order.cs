@@ -40,7 +40,7 @@ namespace Pierre.Models
 
     public static void DeleteOrder(Order orderTitle)
     {
-      
+      _orders.Remove(orderTitle);
     }
 
   
